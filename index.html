@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tavarras Davis — Aspiring Software Engineer</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Tavarras Davis — Aspiring Software Engineer & IT Professional. CompTIA A+, Network+, Security+.">
+</head>
+<body>
+<main class="container">
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="avatar">
+  <img src="headshot.jpg" alt="Tavarras Davis">
+</div>
+
+        <div class="intro">
+          <h1 class="name">Tavarras Davis</h1>
+          <p class="tagline">Aspiring Software Engineer & IT Professional</p>
+
+          <p class="about">
+            I’m building a foundation in web development and cybersecurity while leveraging hands-on
+            IT support experience. Certifications: CompTIA A+, Network+, Security+, and ITIL.
+            I enjoy solving problems, improving systems, and shipping clean, accessible interfaces.
+          </p>
+
+          <div class="links">
+            <a href="mailto:dtavarras@gmail.com" class="link">dtavarras@gmail.com</a>
+            <a href="https://github.com/Dtavarras" class="link" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/tavarras-davis-871526243" class="link" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="skills" class="card fade-up">
+      <h2>Skills & Tools</h2>
+      <p class="muted">Selected technical skills and tools I use while learning web development.</p>
+      <ul class="skill-grid">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Python</li>
+        <li>Active Directory / RDP</li>
+        <li>Troubleshooting & Support</li>
+        <li>Networking basics (TCP)</li>
+        <li>Linux</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card fade-up">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-meta">Tech Advisor — Conduent (Remote)</div>
+          <div class="t-body">Technical support, ticket management, cross-team troubleshooting (Present)</div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-meta">Logistics Account Executive — TQL</div>
+          <div class="t-body">Client management, negotiation, coordination (Sep 2024 – Mar 2025)</div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-meta">Software Support Rep — TaxSlayer Pro (Remote)</div>
+          <div class="t-body">Active Directory, RDP, software troubleshooting (Nov 2023 – Apr 2024)</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs" class="card fade-up">
+      <h2>Certifications</h2>
+      <div class="cert-list">
+        <span class="chip">CompTIA A+</span>
+        <span class="chip">CompTIA Network+</span>
+        <span class="chip">CompTIA Security+</span>
+        <span class="chip">ITIL</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">Designed & built by Tavarras Davis — <a href="mailto:dtavarras@gmail.com">Contact</a></p>
+    </footer>
+  </main>
+
+  <!-- small script to add fade-up when in viewport -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
